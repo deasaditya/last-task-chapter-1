@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Project</title>
+    <link rel="stylesheet" href="css/project.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!-- NavBar -->
+    <nav>
+      <div class="left-side">
+        <a href="index.html">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="myproject.html" class="list-active">My Project</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <a href="contactme.html"> Contact Me </a>
+      </div>
+    </nav>
+<!-- end navbar -->
+
+<!-- blog and form -->
+
+<div class="blog">
+  <div class="blog-form">
+    <div class="form-container">
+      <form onsubmit="getData(event)">
+        <h1>ADD MY PROJECT</h1>
+        <div>
+            <label for="create-project-name">Project Name</label>
+            <input id="create-project-name">
+        </div>
+        <div class="create-project-date">
+          <div class="start">
+            <label for="start-date" >Start Date</label>
+            <input type="date" id="start-date" />
+          </div>
+          <div class="end">
+            <label for="end-date">End Date</label>
+            <input type="date" id="end-date"/>
+          </div>
+        </div>
+        <div>
+          <label for="create-project-textarea">Descipton</label>
+          <textarea id="create-project-textarea"></textarea>
+        </div>
+
+        <!-- coba -->
+        <div class="technologies">
+          <label>Technologies</label>
+          <div>
+            <div>
+              <div>
+                <input id="node-js" type="checkbox" value="fa-node">
+                <label>Node.JS</label>
+              </div>
+              <div>
+                <input id="react-js" type="checkbox" value="fa-react">
+                <label>React.JS</label>
+              </div>
+            </div>
+            <div>
+              <div>
+                <input id="next-js" type="checkbox" value="fa-js">
+                <label>Next.JS</label>
+              </div>
+              <div>
+                <input id="type-script" type="checkbox" value="fa-python">
+                <label>Typrescript</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- coba -->
+
+        <div>
+          <label>Upload Image</label>
+          <div class="input-project-image-group">
+            <label for="image">
+              <p>Attach File</p>
+              <input type="file" id="image" hidden="">
+              <img src="img/file.png" alt="File">
+            </label>
+            
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button>Submit</button>
+        </div>
+        </form>
+      </div>
+
+      <div id="my-project">
+      <h1>MY PROJECT</h1>
+      <div>
+        <div id="containers-project">
+          <div id="container-project">
+            <img src="img/laptop.jpg"/>
+            <a href="detail.html"><h3>Dumbways Mobile App - 2021</h3></a>
+            <div class="durasi">23 Januari 2023 | Indahdlm</div>
+            <p>
+              App that used for dumbways student, it was deployed and can downloaded on playstore.<br/>Happy download
+            </p>
+            
+            <div>
+              <i class="fa-brands fa-html5 fa-2x"></i>   
+              <i class="fa-brands fa-css3-alt fa-2x"></i>
+              <i class="fa-brands fa-js fa-2x"></i>
+            </div>
+            <div>
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+            <div style="float:right; margin: 10px">
+              <p style="font-size: 15px; color:grey">1 minutes ago</p>
+            </div>
+          </div>
+          <div id="container-project">
+            <img src="img/program.jpg"/>
+            <a href="detail.html"><h3>Dumbways Mobile App - 2021</h3></a>
+            <div class="durasi">23 Januari 2023 | Indahdlm</div>
+            <p>
+              App that used for dumbways student, it was deployed and can downloaded on playstore.<br/>Happy download
+            </p>
+            
+            <div>
+              <i class="fa-brands fa-html5 fa-2x"></i>   
+              <i class="fa-brands fa-css3-alt fa-2x"></i>
+              <i class="fa-brands fa-js fa-2x"></i>
+            </div>
+            <div>
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+            <div style="float:right; margin: 10px">
+              <p style="font-size: 15px; color:grey">1 minutes ago</p>
+            </div>
+          </div>
+          <div id="container-project">
+            <img src="img/code.jpg"/>
+            <a href="detail.html"><h3>Dumbways Mobile App - 2021</h3></a>
+            <div class="durasi">23 Januari 2023 | Indahdlm</div>
+            <p>
+              App that used for dumbways student, it was deployed and can downloaded on playstore.<br/>Happy download
+            </p>
+            
+            <div>
+              <i class="fa-brands fa-html5 fa-2x"></i>   
+              <i class="fa-brands fa-css3-alt fa-2x"></i>
+              <i class="fa-brands fa-js fa-2x"></i>
+            </div>
+            <div>
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+            <div style="float:right; margin: 10px">
+              <p style="font-size: 15px; color:grey">1 minutes ago</p>
+            </div>
+          </div>
+          <div id="container-project">
+            <img src="img/switch.jpg"/>
+            <a href="detail.html"><h3>Dumbways Mobile App - 2021</h3></a>
+            <div class="durasi">23 Januari 2023 | Indahdlm</div>
+            <p>
+              App that used for dumbways student, it was deployed and can downloaded on playstore.<br/>Happy download
+            </p>
+    
+            <div>
+              <i class="fa-brands fa-html5 fa-2x"></i>   
+              <i class="fa-brands fa-css3-alt fa-2x"></i>
+              <i class="fa-brands fa-js fa-2x"></i>
+            </div>
+            <div>
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+            <div style="float:right; margin: 10px">
+              <p style="font-size: 15px; color:grey">1 minutes ago</p>
+            </div>
+          </div>
+          <div id="container-project">
+            <img src="img/game.jpg"/>
+            <a href="detail.html"><h3>Dumbways Mobile App - 2021</h3></a>
+            <div class="durasi">23 Januari 2023 | Indahdlm</div>
+            <p>
+              App that used for dumbways student, it was deployed and can downloaded on playstore.<br/>Happy download
+            </p>
+            <div>
+              <i class="fa-brands fa-html5 fa-2x"></i>   
+              <i class="fa-brands fa-css3-alt fa-2x"></i>
+              <i class="fa-brands fa-js fa-2x"></i>
+            </div>
+            <div>
+              <button>edit</button>
+              <button>delete</button>
+            </div>
+            <div style="float:right; margin: 10px">
+              <p style="font-size: 15px; color:grey">1 minutes ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<script src="js/blog.js"></script>
+</body>
+</html>
+
+<!-- sisakan 2 div dibawah -->

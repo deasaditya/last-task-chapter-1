@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+/*Navbar*/
+
+nav {
+    display: flex;
+    background-color: #f4f4f4;
+    height: 8vh;
+
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    flex: 50%;
+}
+
+nav div.left-side{
+    padding-left: 90px;
+
+  }
+
+nav div.right-side{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 90px;
+
+}
+
+nav ul {
+    display: flex;
+    list-style-type:none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left:  40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a.list-active {
+    color: orangered;
+    font-weight: 700;;
+}
+
+nav .right-side a {
+    font-size: 15px;
+    padding: 8px 20px;
+    background-color: black;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*Project*/
+
+.blog-form {
+    
+    margin: 0px auto;
+   /* display: flex;*/
+   background-color: #e0e0e0;
+    margin: 0 auto;
+
+  }
+
+  .blog-form .form-container {
+    width: 500px;
+    margin: 0px auto;
+    padding-bottom: 10px;
+    padding-top: 40px;
+
+  }
+
+  .blog-form .form-container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .blog-form form label {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .blog-form form input, textarea, select {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+  }
+
+  .blog-form form textarea {
+    height: 250px;
+  }
+
+  .blog-form .technologies input {
+  width: fit-content;
+}
+    .blog-form .technologies > div {
+  display: flex;
+  margin-top: 10px;
+}
+.blog-form .technologies  div > div {
+  width: 50%;
+}
+
+.blog-form form .input-project-image-group {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+.blog-form form .input-project-image-group label p {
+    font-size: 15px;
+  }
+
+.blog-form form .input-project-image-group label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .blog-form form .button-group {
+    text-align: right;
+  }
+
+  .blog-form form button {
+    margin-top: 50px;
+    padding: 8px 20px;
+    font-size: 17px;
+    background: black;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .blog-form .create-project-date {
+    display: flex;
+  }
+ 
+  .blog-form .create-project-date .end{
+    margin-left: 7px;
+  }
+
+
+#my-project {
+  background-color: #fbfbfb;
+  padding-top: 50px;
+}
+#my-project h1 {
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+}
+#my-project > div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#containers-project {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+#container-project {
+  width: 30%;
+  background-color: #ffffff;
+  box-shadow: 0 5px 5px rgba(29,29,29,0.25);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px;
+}
+#container-project img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+#container-project > a {
+  text-decoration: none;
+}
+#container-project h3 {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#container-project  div:nth-child(3) {
+  color: rgba(29,29,29,0.5);
+}
+#container-project p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#container-project  div:nth-child(5) {
+  margin-bottom: 40px;
+}
+#container-project i {
+  margin-right: 20px;
+}
+#container-project  div:nth-child(6) {
+  display: flex;
+  justify-content: space-between;
+}
+#container-project button {
+  border: 0;
+  background-color: midnightblue;
+  color: white;
+  font-weight: bold;
+  
+  width: 47%;
+  border-radius: 9px;
+  font-size: 18px;
+  padding: 7px 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  #form-container {
+    width: 80%;
+  }
+  #containers-project {
+    width: 100%;
+  }
+  #container-project {
+    width: 100%;
+  }
+  #container-project i {
+    margin-top: 10px;
+  }
+  #project-date-container input {
+    width: 86%;
+  }
+}
