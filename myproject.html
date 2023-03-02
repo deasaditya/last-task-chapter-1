@@ -2,30 +2,40 @@
 <html>
 <head>
 	<title>My Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/project.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
 
 <!-- NavBar -->
-    <nav>
-      <div class="left-side">
-        <a href="index.html">
-          <img src="img/logo.png" alt="logo" />
-        </a>
-        <ul>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="myproject.html" class="list-active">My Project</a>
-          </li>
-        </ul>
+<nav>
+  <div class="left-side">
+    <a href="/"><img src="img/logo.png" /> </a>
+    <ul>
+    <li class="item-collapse">
+      <a href="index.html" class="active">Home</a>
+    </li>
+    <li class="item-collapse">
+      <a href="myproject.html">My Project</a>
+    </li>
+    </ul>
+  </div>
+
+  <div class="right-side">
+    <a href="#" class="item-collapse"> Contact Me</a>
+  </div>
+  <div id="barsmenu" style="text-align: right; margin-top: 5px; padding-right: 10px; padding-top: 5px;">
+          <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger()">
+              <i class="fa-2x fa-solid fa-bars"></i>
+          </button>
       </div>
-      <div class="right-side">
-        <a href="contactme.html"> Contact Me </a>
-      </div>
-    </nav>
+  </nav>
+  <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="#" class="hamburger-active">Home</a>
+      <a href="#">My Project</a>
+      <a href="#">Contact Me</a>
+  </div>
 <!-- end navbar -->
 
 <!-- blog and form -->
@@ -35,7 +45,7 @@
     <div class="form-container">
       <form onsubmit="getData(event)">
         <h1>ADD MY PROJECT</h1>
-        <div>
+        <div class="project-name">
             <label for="create-project-name">Project Name</label>
             <input id="create-project-name">
         </div>
@@ -49,7 +59,7 @@
             <input type="date" id="end-date"/>
           </div>
         </div>
-        <div>
+        <div class="description">
           <label for="create-project-textarea">Descipton</label>
           <textarea id="create-project-textarea"></textarea>
         </div>
@@ -75,7 +85,7 @@
               </div>
               <div>
                 <input id="type-script" type="checkbox" value="fa-python">
-                <label>Typrescript</label>
+                <label class="type">Python</label>
               </div>
             </div>
           </div>
@@ -83,7 +93,7 @@
 
         <!-- coba -->
 
-        <div>
+        <div class="image1">
           <label>Upload Image</label>
           <div class="input-project-image-group">
             <label for="image">
@@ -100,6 +110,15 @@
         </div>
         </form>
       </div>
+      
+    
+
+
+
+
+
+
+
 
       <div id="my-project">
       <h1>MY PROJECT</h1>
@@ -212,7 +231,7 @@
         </div>
       </div>
 </div>
-
+<script src="js/index.js"></script>
 <script src="js/blog.js"></script>
 </body>
 </html>

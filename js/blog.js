@@ -33,13 +33,13 @@ function getData(e) {
     startdate = new Date(startdate);
     enddate = new Date(enddate);
     let duration = Math.floor((enddate - startdate)/ (30*24*60*60*1000));
-    if (duration > 0) duration = `${duration} month${duration > 1 ? "s" : ""}`;
+    if (duration > 0) duration = `${duration} month${duration > 1 ? "" : ""}`;
     else {
       duration = Math.floor((enddate - startdate)/ (7*24*60*60*1000));
-      if (duration > 0) duration = `${duration} week${duration > 1 ? "s" : ""}`;
+      if (duration > 0) duration = `${duration} week${duration > 1 ? "" : ""}`;
       else {
         duration = Math.floor((enddate - startdate)/ (24*60*60*1000));
-        if (duration > 0) duration = `${duration} day${duration > 1 ? "s" : ""}`;
+        if (duration > 0) duration = `${duration} day${duration > 1 ? "" : ""}`;
         else {
           duration = "baru saja";
         }
@@ -104,18 +104,18 @@ function showData() {
 
 
 // // function manipulation date tine
-function createTime(time){
-    // declaration variable
-    let years = time.getFullYear()
-    let monthIndex = time.getMonth()
-    let date = time.getDate()
-    let hour = time.getHours()
-    let minutes = time.getMinutes()
+// function createTime(time){
+//     // declaration variable
+//     let years = time.getFullYear()
+//     let monthIndex = time.getMonth()
+//     let date = time.getDate()
+//     let hour = time.getHours()
+//     let minutes = time.getMinutes()
     
-    const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+//     const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
-    return `${date} ${month[monthIndex]} ${years} ${hour}:${minutes} WIB`
-}
+//     return `${date} ${month[monthIndex]} ${years} ${hour}:${minutes} WIB`
+// }
 
 
 // // manipulation duration time

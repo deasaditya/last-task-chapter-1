@@ -2,29 +2,41 @@
 <html>
 <head>
 	<title>DEAS ADITYA | PERSONAL WEB</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<!-- navbar -->
-<nav>
-      <div class="left-side">
-        <a href="index.html"><img src="img/logo.png" id="image" /> </a>
-        <ul>
-          <li>
-            <a href="index.html" class="active">Home</a>
-          </li>
-          <li>
-            <a href="myproject.html">My Project</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="right-side">
-        <a href="contactme.html"> Contact Me</a>
-      </div>
-    </nav>
+	
+	<nav>
+		<div class="left-side">
+		  <a class="logo" href="/"><img src="img/logo.png" id="image" /> </a>
+		  <ul>
+		  <li class="item-collapse">
+			<a href="index.html" class="active">Home</a>
+		  </li>
+		  <li class="item-collapse">
+			<a href="myproject.html">My Project</a>
+		  </li>
+		  </ul>
+		</div>
+	  
+		<div class="right-side">
+		  <a href="#" class="item-collapse"> Contact Me</a>
+		</div>
+		<div id="barsmenu" style="text-align: right; margin-top: 5px; padding-right: 10px; padding-top: 5px;">
+				<button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger()">
+					<i class="fa-2x fa-solid fa-bars"></i>
+				</button>
+			</div>
+		</nav>
+		<div class="hamburger-nav-container" id="hamburger-nav-container">
+			<a href="#" class="hamburger-active">Home</a>
+			<a href="#">My Project</a>
+			<a href="#">Contact Me</a>
+		</div>
 	<!-- end navbar -->
 
 <!-- right content -->
@@ -33,22 +45,23 @@
 	<section>	
 
 <div class="left-content">
-	<h1 style="margin-bottom: 30px; margin-top: 15px;">Hi Welcome To My Hut</h1>
-	<p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+	<div class="card-container">
+		<h1 style="margin-bottom: 30px; margin-top: 15px;">Hi Welcome To My Hut</h1>
+		<p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
 
-	<div class="container-skill">
-		<button class="button" style="margin-right: 30px;">contact</button>
-<div class="cv">
-	<a href="#">download CV</a>
-	<i class="fa-solid fa-download"></i>
-</div>
+		<div class="container-skill">
+			<button class="button" style="margin-right: 30px;">contact</button>
+		<div class="cv">
+		<a href="#">download CV</a>
+		<i class="fa-solid fa-download"></i>
 	</div>
+</div>
 
 	<div class="container-sosmed">
 		<div class="list-sosmed">
@@ -58,10 +71,10 @@
 			<i class="fa-brands fa-twitter fa-2x"></i>
 		</div>
 	</div>
-
+</div>
 </div>	
 	
-	<div class="right-content">	
+			<div class="right-content">	
 					<div style="
               				width: 350px;
              				padding: 15px;
@@ -78,7 +91,7 @@
 			</div>
 	</section>
 </div>
-
+<script src="js/index.js"></script>
 </body>
 
 </html>
