@@ -45,11 +45,15 @@ nav ul li a {
   text-decoration: none;
   color: black;
 }
+.hamburger-nav-container a:hover {
+  background-color: black;
+}
 
 nav ul li a.active {
-  color: black;
-  font-weight: 700;
+  color:black;
+ 
 }
+
 
 nav .right-side a {
   font-size: 15px;
