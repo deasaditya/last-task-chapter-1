@@ -49,10 +49,16 @@ nav ul li a {
   text-decoration: none;
   color: black;
 }
+.hamburger-nav-container a:hover {
+  background-color: black;
+}
 
 nav ul li a.active {
-  color: black;
-  font-weight: 700;
+  color:black;
+ 
+}
+.home {
+  color: orangered;
 }
 
 nav .right-side a {
@@ -129,9 +135,7 @@ section {
     display: none;
 }
 
-  .hamburger-nav-container .hamburger-active {
-    background-color: black;
-}
+
 
 .hamburger-nav-container a {
   color: white;
@@ -204,6 +208,7 @@ section {
 nav div.left-side {
   padding-left: 10px;
 }
+
 
 }
 
